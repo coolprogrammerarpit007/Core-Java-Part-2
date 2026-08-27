@@ -1,10 +1,11 @@
 public class Demo3 {
     public static void main(String[] args) {
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder("Arpit Mishra");
+       
 
-            sb.append("Aditya");
-            sb.append("Tandon");
-            sb.append("aaaaa");
+            // sb.append("Aditya");
+            // sb.append("Tandon");
+            // sb.append("aaaaa");
             // 6 + 6 + 5 = 17
 
             //sb.append(" Tandon");
@@ -38,9 +39,11 @@ public class Demo3 {
 
         //sb.ensureCapacity(100);
 
-        System.out.println(sb.capacity()); // 34
+        // System.out.println(sb.capacity()); // 34
+         System.out.println(sb.capacity()); // 28
+         sb.trimToSize();
 
-        sb.trimToSize(); // 17
+        // sb.trimToSize(); // 16// removes unused memory
 
         System.out.println(sb.capacity());
     }

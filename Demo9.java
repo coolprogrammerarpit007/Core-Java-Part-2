@@ -13,6 +13,6 @@ class Box<T extends Number> {
     T value;
 
     public void printDouble() {
-        System.out.println(value.doubleValue());
+        System.out.println(this.value.doubleValue());
     }
 }
